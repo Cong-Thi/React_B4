@@ -1,0 +1,95 @@
+table {
+    border-collapse: collapse;
+    margin-bottom: 90px;
+}
+
+th, td {
+    border: 0.5px solid rgba($color: #ddd, $alpha: 0.3);
+    text-align: left;
+  }
+
+  th {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 10px;
+  }
+
+  td {
+    padding: 3px 10px;
+  }
+
+  .detail-container {
+    border: 1px solid #fff;
+    width: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+    
+    .detail-table {
+      margin-top: 10px;
+
+      .cancel-btn {
+        border: none;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
+    .booking-footer {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      bottom: 20px;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      .total {
+        display: flex;
+
+        h4 {
+          margin-right: 10px;
+        }
+
+        p {
+          color: #1ea83c;
+          font-weight: 700;
+        }
+      }
+
+      .footer-btn {
+        text-align: end;
+        .btn {
+          font-size: 13px;
+          font-weight: 600;
+          padding: 8px 13px;
+          margin-top: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+          
+          &:hover {
+            opacity: 0.8;
+          }
+  
+          & ~ .btn {
+            margin-left: 5px;
+          }
+        }
+
+        .btn-success {
+          background-color: #04AA6D;
+          color: #fff;
+        }
+
+        .btn-danger {
+          background-color: red;
+          color: #fff;
+        }
+      }
+      
+    }
+  }

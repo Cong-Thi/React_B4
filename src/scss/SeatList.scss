@@ -1,0 +1,44 @@
+.list-container {
+    text-align: center;
+    .row-list {
+        display: flex;
+        flex-direction: row;
+        padding-right: 50px;
+        .row {
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #ff8c00;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 5px 10px;
+            
+        }
+        .seat-item {
+            font-size: 13px;
+            font-weight: 500;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid #1ea83c;
+            color: #1ea83c;
+
+            &:hover {
+                border-color: #ff8c00;
+                color: #1ea83c;
+            }
+
+        &.booked {
+            background-color: #1ea83c;
+            color: #fff;
+        }         
+        }
+    }
+}
